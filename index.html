@@ -4,237 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Agrinova Global | Fresh produce, Dubai</title>
-<meta name="description" content="Agrinova Global is an independently owned fresh produce company based in Dubai. We grow on our own farms in Egypt, work directly with UAE growers and import from trusted farms across the region, supplying buyers across the UAE and GCC.">
+<meta name="description" content="Agrinova Global is an independently owned fresh produce company based in Dubai, growing on its own farms in Egypt, working directly with UAE growers and trusted regional farms, and supplying buyers across the UAE and GCC.">
 <meta name="theme-color" content="#0F3B2E">
-<meta property="og:title" content="Agrinova Global">
-<meta property="og:description" content="Fresh produce from our own farms in Egypt, UAE growers and trusted regional farms, delivered from Dubai to the UAE and GCC.">
+<meta property="og:title" content="Agrinova Global | Fresh produce, Dubai">
+<meta property="og:description" content="Agrinova Global is an independently owned fresh produce company based in Dubai, growing on its own farms in Egypt, working directly with UAE growers and trusted regional farms, and supplying buyers across the UAE and GCC.">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,50&family=Figtree:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap">
-<style>
-:root{
-  --forest:#0F3B2E; --forest-2:#174A3A; --forest-3:#1F5845;
-  --mist:#E8ECE4; --paper:#F6F7F2; --ink:#14241D; --muted:#55645B; --line:#CCD5C9;
-  --saffron:#E09A2D; --saffron-ink:#8A5A12; --pom:#8C2A3C;
-  --on-forest:#EEF0E7; --on-forest-muted:#AEC0B3; --forest-line:rgba(238,240,231,.16);
-  --serif:"Fraunces",Georgia,"Times New Roman",serif;
-  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --arabic:"IBM Plex Sans Arabic","Noto Sans Arabic","Geeza Pro",Tahoma,sans-serif;
-  --w:1200px; --gut:max(20px,env(safe-area-inset-left,0px));
-  color-scheme:light;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
-body{margin:0;background:var(--mist);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-p{margin:0}
-h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;line-height:1.05;letter-spacing:-.015em;font-variation-settings:"SOFT" 50,"opsz" 144;text-wrap:balance}
-:focus-visible{outline:2px solid var(--saffron);outline-offset:3px;border-radius:2px}
-.wrap{max-width:var(--w);margin:0 auto;padding-left:var(--gut);padding-right:max(20px,env(safe-area-inset-right,0px))}
-.skip{position:absolute;left:-999px;top:8px;background:var(--saffron);color:var(--ink);padding:8px 14px;z-index:99}
-.skip:focus{left:8px}
-
-/* Header */
-.top{position:sticky;top:0;z-index:20;background:rgba(15,59,46,.94);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);color:var(--on-forest);padding-top:env(safe-area-inset-top,0px)}
-.top .wrap{display:flex;align-items:center;gap:24px;height:68px}
-.mark{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-size:1.5rem;letter-spacing:-.01em}
-.mark img{display:block;height:36px;width:auto}
-.mark small{font-family:var(--sans);font-size:.8rem;color:var(--on-forest-muted);letter-spacing:.01em;margin-left:2px;align-self:flex-end;padding-bottom:5px}
-.nav{margin-left:auto;display:flex;align-items:center;gap:4px}
-.nav a{text-decoration:none;font-size:.95rem;padding:8px 12px;border-radius:999px;color:var(--on-forest)}
-.nav a:hover{background:var(--forest-line)}
-.nav a.cta{background:var(--saffron);color:var(--ink);font-weight:600;margin-left:8px}
-.nav a.cta:hover{background:#ECAE4C}
-.menu-btn{display:none;margin-left:auto;background:none;border:1px solid var(--forest-line);color:var(--on-forest);border-radius:999px;padding:8px 16px;font:inherit;font-size:.95rem;cursor:pointer}
-@media (max-width:820px){
-  .menu-btn{display:block}
-  .nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;background:var(--forest);padding:8px 20px 20px;gap:2px;border-top:1px solid var(--forest-line)}
-  .nav.open{display:flex}
-  .nav a{padding:12px 4px;border-radius:0;border-bottom:1px solid var(--forest-line)}
-  .nav a.cta{margin:12px 0 0;text-align:center;border-radius:999px;border:0}
-  .mark small{display:none}
-}
-
-/* Hero */
-.hero{position:relative;overflow:hidden;color:var(--on-forest);background:var(--forest);min-height:min(88vh,860px);display:flex;align-items:flex-end}
-.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,43,33,.86) 0%,rgba(10,43,33,.62) 45%,rgba(10,43,33,.18) 100%),linear-gradient(0deg,rgba(10,43,33,.7) 0%,rgba(10,43,33,0) 45%)}
-.hero .wrap{position:relative;width:100%;padding-top:120px;padding-bottom:88px}
-.hero-copy{max-width:640px}
-.hero h1{font-size:clamp(2.6rem,6.2vw,5.2rem);font-weight:340}
-.hero .lead{margin-top:28px;max-width:34em;font-size:1.15rem;color:#D3DDD5;line-height:1.65}
-.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:36px}
-.vid-toggle{position:absolute;right:max(20px,env(safe-area-inset-right,0px));bottom:24px;z-index:2;background:rgba(10,43,33,.55);color:var(--on-forest);border:1px solid rgba(238,240,231,.35);border-radius:999px;padding:8px 14px;font:500 .85rem var(--sans);cursor:pointer;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
-.vid-toggle:hover{background:rgba(10,43,33,.8)}
-.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 24px;border-radius:999px;font:600 1rem var(--sans);text-decoration:none;border:1px solid transparent;cursor:pointer}
-.btn.solid{background:var(--saffron);color:var(--ink)}
-.btn.solid:hover{background:#ECAE4C}
-.btn.ghost{border-color:rgba(238,240,231,.5);color:var(--on-forest)}
-.btn.ghost:hover{background:rgba(238,240,231,.12)}
-.btn.dark{background:var(--forest);color:var(--on-forest)}
-.btn.dark:hover{background:var(--forest-2)}
-@media (max-width:900px){
-  .hero{min-height:min(92vh,760px)}
-  .hero .wrap{padding-top:96px;padding-bottom:84px}
-  .hero-shade{background:linear-gradient(0deg,rgba(10,43,33,.92) 0%,rgba(10,43,33,.6) 55%,rgba(10,43,33,.35) 100%)}
-  .vid-toggle{bottom:20px}
-}
-
-/* Sections */
-section{scroll-margin-top:76px}
-.sec{padding:112px 0}
-.sec-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:56px}
-.sec-head h2{font-size:clamp(2.1rem,4.4vw,3.6rem);font-weight:340}
-.sec-head p{color:var(--muted);max-width:36em;font-size:1.1rem}
-@media (max-width:820px){.sec{padding:72px 0}.sec-head{grid-template-columns:1fr;gap:18px;margin-bottom:36px}}
-
-/* Origins flow */
-.flow{display:grid;grid-template-columns:minmax(0,1.15fr) 64px minmax(0,.9fr) 64px minmax(0,1fr);align-items:stretch}
-.origins{display:grid;gap:14px}
-.origin{background:var(--paper);border-radius:20px;padding:24px 26px;border:1px solid var(--line)}
-.origin h3{font-size:1.45rem;font-weight:420}
-.origin p{color:var(--muted);margin-top:8px;font-size:1rem}
-.origin .where{margin-top:12px;font-size:.92rem;color:var(--ink)}
-.link{position:relative}
-.link::before{content:"";position:absolute;top:50%;left:8px;right:8px;border-top:1.5px dashed var(--forest-3);opacity:.55}
-.link::after{content:"";position:absolute;top:50%;right:6px;width:9px;height:9px;border-top:1.5px solid var(--forest-3);border-right:1.5px solid var(--forest-3);transform:translateY(-50%) rotate(45deg);opacity:.7}
-.hub{background:var(--forest);color:var(--on-forest);border-radius:28px;padding:32px 28px;display:flex;flex-direction:column;justify-content:space-between;gap:28px}
-.hub h3{font-size:2rem;font-weight:360}
-.hub p{color:var(--on-forest-muted);font-size:1rem}
-.hub ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:.98rem}
-.hub li{display:flex;gap:10px;align-items:baseline}
-.hub li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--saffron);flex:none;transform:translateY(-2px)}
-.buyers{display:grid;gap:14px;align-content:center}
-.buyer{padding:18px 4px;border-bottom:1px solid var(--line)}
-.buyer:first-child{border-top:1px solid var(--line)}
-.buyer h3{font-size:1.3rem;font-weight:420}
-.buyer p{color:var(--muted);font-size:.98rem;margin-top:4px}
-.buyers .label{font-size:.95rem;color:var(--muted);margin-bottom:4px}
-@media (max-width:980px){
-  .flow{grid-template-columns:1fr}
-  .link{height:44px}
-  .link::before{top:8px;bottom:8px;left:50%;right:auto;border-top:0;border-left:1.5px dashed var(--forest-3)}
-  .link::after{top:auto;bottom:6px;left:50%;right:auto;transform:translateX(-50%) rotate(135deg)}
-}
-
-/* Approach */
-.approach{background:var(--paper)}
-.principles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
-.principle{padding:36px 28px 8px 0;border-right:1px solid var(--line);margin-right:28px}
-.principle:last-child{border-right:0;margin-right:0}
-.principle svg{width:44px;height:44px;color:var(--forest-3)}
-.principle h3{font-size:1.5rem;font-weight:420;margin-top:22px}
-.principle p{color:var(--muted);margin-top:12px;font-size:1rem}
-@media (max-width:980px){.principles{grid-template-columns:repeat(2,minmax(0,1fr))}.principle:nth-child(2){border-right:0;margin-right:0}.principle:nth-child(n+3){border-top:1px solid var(--line)}}
-@media (max-width:560px){.principles{grid-template-columns:1fr}.principle{border-right:0;margin-right:0;padding-right:0}.principle+.principle{border-top:1px solid var(--line)}}
-.note{margin-top:48px;padding:28px 32px;border-radius:20px;background:var(--mist);display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
-.note p{font-family:var(--serif);font-size:clamp(1.25rem,2.2vw,1.6rem);line-height:1.35;font-weight:340}
-.note .dot{width:56px;height:56px;border-radius:50%;background:var(--forest);display:grid;place-items:center}
-.note .dot svg{width:28px;height:28px}
-@media (max-width:560px){.note{grid-template-columns:1fr;padding:24px}}
-
-/* Produce & seasons */
-.months{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));border-radius:999px;background:var(--paper);border:1px solid var(--line);padding:5px;gap:2px}
-.months button{font:500 .95rem var(--sans);color:var(--muted);background:none;border:0;border-radius:999px;padding:10px 0;cursor:pointer;min-height:44px}
-.months button:hover{color:var(--ink);background:var(--mist)}
-.months button[aria-pressed="true"]{background:var(--forest);color:var(--on-forest)}
-.months button.now{position:relative}
-.months button.now::after{content:"";position:absolute;left:50%;bottom:5px;width:4px;height:4px;border-radius:50%;background:var(--saffron);transform:translateX(-50%)}
-@media (max-width:700px){.months{grid-template-columns:repeat(6,minmax(0,1fr));border-radius:24px}}
-.controls{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;justify-content:space-between;margin-top:20px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips button{font:500 .92rem var(--sans);background:transparent;color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;min-height:40px}
-.chips button:hover{border-color:var(--forest-3)}
-.chips button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.controls label.toggle{display:inline-flex;grid-template-columns:none;align-items:center;gap:10px;font-size:.95rem;color:var(--muted);cursor:pointer;user-select:none}
-.controls .toggle input{appearance:none;-webkit-appearance:none;width:42px;height:24px;min-height:0;padding:0;border:0;flex:none;border-radius:999px;background:var(--line);position:relative;cursor:pointer;margin:0;transition:background .2s}
-.toggle input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
-.controls .toggle input:checked{background:var(--forest-3)}
-.controls .toggle input:checked::after{transform:translateX(18px)}
-.summary{margin:44px 0 24px;font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,2rem);font-weight:340;line-height:1.25}
-.summary b{font-weight:500}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
-.item{background:var(--paper);border-radius:22px;padding:16px 18px 18px;display:flex;flex-direction:column;border:1px solid transparent}
-.item:hover{border-color:var(--line)}
-.plate{aspect-ratio:1/1;border-radius:16px;background:radial-gradient(circle at 50% 58%,#fff 0,#F1F3EC 55%,#E6EAE1 100%);display:grid;place-items:center;overflow:hidden}
-.plate img{width:82%;height:82%;object-fit:contain;filter:drop-shadow(0 10px 10px rgba(20,36,29,.18))}
-.plate .mono{font-family:var(--arabic);font-size:3.2rem;color:var(--forest-3);opacity:.55;line-height:1}
-.item h3{font-size:1.28rem;font-weight:440;margin-top:16px;letter-spacing:-.005em}
-.item .ar{font-family:var(--arabic);direction:rtl;text-align:left;color:var(--muted);font-size:.98rem;margin-top:2px}
-.item .desc{font-size:.9rem;color:var(--muted);margin-top:6px;line-height:1.45}
-.item .meta{margin-top:auto;padding-top:14px}
-.tags{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-size:.78rem;padding:3px 9px;border-radius:999px;background:var(--mist);color:var(--ink)}
-.tag.eg{background:#F6E6CB;color:#6E4610}
-.tag.ae{background:#DDE8E1;color:#1F5845}
-.tag.rg{background:#ECE2E4;color:#6E2232}
-.season{display:grid;grid-template-columns:repeat(12,1fr);gap:2px;margin-top:12px}
-.season i{height:6px;border-radius:2px;background:var(--line)}
-.season i.a{background:#9DB8A6}
-.season i.p{background:var(--forest-3)}
-.season i.sel{outline:1.5px solid var(--saffron);outline-offset:1px}
-.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.85rem;color:var(--muted);margin-top:28px}
-.legend span{display:inline-flex;align-items:center;gap:8px}
-.legend i{display:inline-block;width:18px;height:6px;border-radius:2px}
-.empty{padding:48px;text-align:center;background:var(--paper);border-radius:22px;color:var(--muted)}
-.more{display:flex;justify-content:center;margin-top:32px}
-
-/* About */
-.about{background:var(--forest);color:var(--on-forest)}
-.about .sec-head p{color:var(--on-forest-muted)}
-.about-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:64px}
-.about-copy p{font-size:1.15rem;color:var(--on-forest-muted);max-width:34em}
-.about-copy p+p{margin-top:20px}
-.about-copy p.big{font-family:var(--serif);color:var(--on-forest);font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.3;font-weight:330}
-.facts{list-style:none;margin:0;padding:0}
-.facts li{padding:22px 0;border-top:1px solid var(--forest-line);display:grid;grid-template-columns:150px 1fr;gap:20px}
-.facts li:last-child{border-bottom:1px solid var(--forest-line)}
-.facts dt,.facts .k{color:var(--on-forest-muted);font-size:.95rem}
-.facts .v{font-size:1.05rem}
-@media (max-width:900px){.about-grid{grid-template-columns:1fr;gap:40px}.facts li{grid-template-columns:1fr;gap:4px}}
-
-/* Partner */
-.partner-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:start}
-.contact-list{list-style:none;margin:32px 0 0;padding:0;display:grid;gap:18px}
-.contact-list .k{font-size:.92rem;color:var(--muted)}
-.contact-list a{font-size:1.15rem;text-decoration-color:var(--line);text-underline-offset:4px}
-.contact-list a:hover{text-decoration-color:var(--saffron)}
-form{background:var(--paper);border-radius:28px;padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
-form .full{grid-column:1/-1}
-label{display:grid;gap:6px;font-size:.92rem;color:var(--muted)}
-input,select,textarea{font:inherit;font-size:1rem;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-height:48px;width:100%}
-textarea{min-height:130px;resize:vertical}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--forest-3);outline-offset:0;border-color:transparent}
-form .foot{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between}
-form .hint{font-size:.88rem;color:var(--muted);max-width:30em}
-.err{color:var(--pom);font-size:.9rem}
-@media (max-width:900px){.partner-grid{grid-template-columns:1fr;gap:36px}form{grid-template-columns:1fr;padding:24px}}
-
-/* Footer */
-footer{background:#0A2B21;color:var(--on-forest-muted);padding:56px 0 calc(40px + env(safe-area-inset-bottom,0px));font-size:.92rem}
-footer .row{display:flex;flex-wrap:wrap;gap:24px 48px;justify-content:space-between}
-footer .mark{color:var(--on-forest)}
-footer p+p{margin-top:6px}
-footer .fine{margin-top:40px;padding-top:24px;border-top:1px solid var(--forest-line);font-size:.82rem;line-height:1.55}
-footer a{color:var(--on-forest)}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-
 <header class="top">
   <div class="wrap">
-    <a class="mark" href="#top" aria-label="Agrinova Global, home"><img src="logo-light.png" alt="Agrinova" width="178" height="36"></a>
+    <a class="mark" href="index.html" aria-label="Agrinova Global, home"><img src="logo-light.png" alt="Agrinova" width="178" height="36"></a>
     <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
     <nav class="nav" id="nav" aria-label="Main">
-      <a href="#origins">Where we grow</a>
-      <a href="#approach">Our approach</a>
-      <a href="#produce">Produce</a>
-      <a href="#about">About</a>
-      <a class="cta" href="#partner">Partner with us</a>
+      <a href="index.html#origins">Where we grow</a>
+      <a href="produce.html">Produce</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="index.html#about">About</a>
+      <a class="cta" href="index.html#partner">Partner with us</a>
     </nav>
   </div>
 </header>
@@ -250,7 +41,7 @@ footer a{color:var(--on-forest)}
       <h1>From the field to the Gulf, without the long way round.</h1>
       <p class="lead">Agrinova is an independently owned fresh produce company based in Dubai. We grow on our own farms in Egypt, work directly with UAE growers and bring in harvests from trusted farms across the region, then grade, cool and deliver to buyers across the UAE and GCC.</p>
       <div class="actions">
-        <a class="btn solid" href="#produce">See what's in season</a>
+        <a class="btn solid" href="produce.html">See what's in season</a>
         <a class="btn ghost" href="#partner">Talk to our trading desk</a>
       </div>
     </div>
@@ -331,34 +122,24 @@ footer a{color:var(--on-forest)}
         <p>Planning harvests around confirmed orders and keeping the cold chain unbroken so more of what we grow reaches a table.</p>
       </article>
     </div>
-    <div class="note">
-      <div class="dot" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none" stroke="#E09A2D" stroke-width="2" stroke-linecap="round"><path d="M16 4c-6 5-9 10-9 15a9 9 0 0 0 18 0c0-5-3-10-9-15z"/><path d="M16 12v14"/></svg></div>
-      <p>We sell what is in season, from the place where it grows best. The calendar below is how we plan.</p>
+    <a class="link-arrow" href="sustainability.html">Read our approach to sustainability</a>
+  </div>
+</section>
+
+<section class="sec teaser" id="season">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>At its best in <span id="teaserMonth">this month</span>.</h2>
+      <p>A few of the lines at their peak right now. We supply <b id="teaserCount"></b> lines this month across fruit, vegetables, roots and more.</p>
+    </div>
+    <div class="grid" id="teaserGrid"></div>
+    <div class="teaser-foot">
+      <p>See every product we supply, month by month, with its origins and peak season.</p>
+      <a class="btn dark" href="produce.html">See the full produce calendar</a>
     </div>
   </div>
 </section>
 
-<section class="sec" id="produce">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>What's in season.</h2>
-      <p>Choose a month to see what we're supplying and where it comes from. Each bar shows a product's year, with its peak months in green.</p>
-    </div>
-    <div class="months" role="group" aria-label="Month"></div>
-    <div class="controls">
-      <div class="chips" role="group" aria-label="Category"></div>
-      <label class="toggle"><input type="checkbox" id="peakOnly"> Peak season only</label>
-    </div>
-    <p class="summary" aria-live="polite"></p>
-    <div class="grid"></div>
-    <div class="more"><button class="btn dark" id="moreBtn" hidden>Show all</button></div>
-    <div class="legend">
-      <span><i style="background:var(--forest-3)"></i>Peak season</span>
-      <span><i style="background:#9DB8A6"></i>Available</span>
-      <span><i style="background:var(--line)"></i>Out of season</span>
-    </div>
-  </div>
-</section>
 
 <section class="sec about" id="about">
   <div class="wrap">
@@ -422,9 +203,14 @@ footer a{color:var(--on-forest)}
   <div class="wrap">
     <div class="row">
       <div>
-        <a class="mark" href="#top"><img src="logo-light.png" alt="Agrinova" width="158" height="32"></a>
+        <a class="mark" href="index.html"><img src="logo-light.png" alt="Agrinova" width="158" height="32"></a>
         <p style="margin-top:14px">Agrinova Global General Trading L.L.C.</p>
         <p>Fresh Market, Ras Al Khor, Dubai, UAE</p>
+      </div>
+      <div>
+        <p><a href="produce.html">Produce</a></p>
+        <p><a href="sustainability.html">Sustainability</a></p>
+        <p><a href="index.html#partner">Partner with us</a></p>
       </div>
       <div>
         <p><a href="mailto:info@agrinova.ae">info@agrinova.ae</a></p>
@@ -434,92 +220,7 @@ footer a{color:var(--on-forest)}
     <p class="fine">© <span id="yr"></span> Agrinova Global General Trading L.L.C. Video from Pexels; product photographs from Unsplash, with some from the Fruits-360 dataset by Horea Mureșan and contributors (CC BY-SA 4.0), adapted as cutouts for this site.</p>
   </div>
 </footer>
-
-<script id="data" type="application/json">{"cats":[{"key":"citrus","name":"Citrus","desc":"Oranges, mandarins, lemons, baladi limes and grapefruit, mostly from our own farms in Egypt."},{"key":"fruit","name":"Fruit","desc":"Grapes, pomegranates, figs, stone fruit, apples and pears."},{"key":"tropical","name":"Tropical & exotic","desc":"Mangoes, bananas, guava, dates and exotic lines for the Gulf market."},{"key":"berries","name":"Berries & cherries","desc":"Strawberries, blueberries, raspberries, mulberries and cherries."},{"key":"melons","name":"Melons","desc":"Watermelons, cantaloupes and Galia melons through the summer."},{"key":"veg","name":"Vegetables","desc":"Tomatoes, cucumbers, peppers, zucchini, eggplant, okra and beans."},{"key":"roots","name":"Roots & bulbs","desc":"Potatoes, onions, garlic, carrots, taro and other roots."},{"key":"greens","name":"Cabbage & cauliflower","desc":"White and red cabbage, cauliflower and broccoli."}],"products":[{"id":"orange","en":"Oranges","ar":"برتقال","cat":"citrus","org":["EG"],"note":"Navel, Valencia and Baladi","m":[2,2,2,1,1,1,0,0,0,0,0,1],"img":true},{"id":"mandarin","en":"Mandarins","ar":"يوسفي","cat":"citrus","org":["EG"],"note":"Baladi and Murcott","m":[2,1,1,0,0,0,0,0,0,0,1,2],"img":true},{"id":"clementine","en":"Clementines","ar":"كليمنتينا","cat":"citrus","org":["EG"],"note":"Seedless, small calibre","m":[1,1,0,0,0,0,0,0,0,0,1,2],"img":true},{"id":"lemon","en":"Lemons","ar":"ليمون أضاليا","cat":"citrus","org":["EG"],"note":"Eureka and Adalia types","m":[1,1,1,1,1,1,1,1,1,2,2,2],"img":true},{"id":"lime","en":"Baladi limes","ar":"ليمون بلدي","cat":"citrus","org":["EG","RG"],"note":"Small, seedy, very aromatic","m":[1,1,1,1,2,2,2,2,1,1,1,1],"img":true},{"id":"grapefruit","en":"Grapefruit","ar":"جريب فروت","cat":"citrus","org":["EG"],"note":"Pink and white flesh","m":[2,2,1,1,0,0,0,0,0,0,0,1],"img":true},{"id":"pomelo","en":"Pomelo","ar":"بوميلو","cat":"citrus","org":["RG"],"note":"Sweetie and Chinese pomelo","m":[2,1,1,0,0,0,0,0,0,1,2,2],"img":true},{"id":"kumquat","en":"Kumquats","ar":"كمكوات","cat":"citrus","org":["EG"],"note":"Oval, eaten whole","m":[2,2,1,0,0,0,0,0,0,0,0,1],"img":true},{"id":"grapes-white","en":"White grapes","ar":"عنب أبيض","cat":"fruit","org":["EG"],"note":"Superior and Thompson seedless","m":[0,0,0,0,1,2,2,1,1,0,0,0],"img":true},{"id":"grapes-red","en":"Red grapes","ar":"عنب أحمر","cat":"fruit","org":["EG"],"note":"Flame and Crimson seedless","m":[0,0,0,0,0,1,2,2,1,1,0,0],"img":true},{"id":"grapes-black","en":"Black grapes","ar":"عنب أسود","cat":"fruit","org":["EG","RG"],"note":"Autumn Royal and Sweet Jubilee","m":[0,0,0,0,0,0,1,2,2,1,0,0],"img":true},{"id":"apple-red","en":"Red apples","ar":"تفاح أحمر","cat":"fruit","org":["RG"],"note":"Red Delicious, Gala, Fuji","m":[1,1,1,1,1,1,1,1,2,2,2,1],"img":true},{"id":"apple-green","en":"Green apples","ar":"تفاح أخضر","cat":"fruit","org":["RG"],"note":"Granny Smith","m":[1,1,1,1,1,1,1,1,2,2,2,1],"img":true},{"id":"apple-golden","en":"Golden apples","ar":"تفاح أصفر","cat":"fruit","org":["RG"],"note":"Golden Delicious","m":[1,1,1,1,1,1,1,1,2,2,2,1],"img":true},{"id":"apple-pink","en":"Pink Lady apples","ar":"تفاح بينك ليدي","cat":"fruit","org":["RG"],"note":"Crisp, sweet-tart","m":[1,1,1,2,2,2,2,1,1,1,1,1],"img":true},{"id":"pear","en":"Pears","ar":"كمثرى","cat":"fruit","org":["RG","EG"],"note":"Williams, Coscia, Forelle","m":[1,1,1,1,1,1,2,2,2,1,1,1],"img":true},{"id":"peach","en":"Peaches","ar":"خوخ","cat":"fruit","org":["EG"],"note":"Early Grande, Florida Prince","m":[0,0,0,1,2,2,1,0,0,0,0,0],"img":true},{"id":"flat-peach","en":"Flat peaches","ar":"خوخ مفلطح","cat":"fruit","org":["RG"],"note":"Saturn type","m":[0,0,0,0,1,2,2,1,0,0,0,0],"img":true},{"id":"nectarine","en":"Nectarines","ar":"نكتارين","cat":"fruit","org":["EG","RG"],"note":"Yellow flesh","m":[0,0,0,0,1,2,2,1,0,0,0,0],"img":true},{"id":"apricot","en":"Apricots","ar":"مشمش","cat":"fruit","org":["EG"],"note":"Amar and Canino","m":[0,0,0,0,2,1,0,0,0,0,0,0],"img":true},{"id":"plum","en":"Plums","ar":"برقوق","cat":"fruit","org":["EG","RG"],"note":"Red and black, Hollywood","m":[0,0,0,0,1,2,2,1,1,0,0,0],"img":true},{"id":"quince","en":"Quince","ar":"سفرجل","cat":"fruit","org":["EG","RG"],"note":"For cooking and jams","m":[0,0,0,0,0,0,0,0,1,2,2,1],"img":true},{"id":"persimmon","en":"Persimmons","ar":"كاكا","cat":"fruit","org":["EG"],"note":"Sweet, non-astringent","m":[0,0,0,0,0,0,0,0,1,2,2,1],"img":true},{"id":"fig","en":"Figs","ar":"تين","cat":"fruit","org":["EG"],"note":"Sultani and purple figs","m":[0,0,0,0,0,1,2,2,1,0,0,0],"img":true},{"id":"pomegranate","en":"Pomegranates","ar":"رمان","cat":"fruit","org":["EG"],"note":"Wonderful variety","m":[0,0,0,0,0,0,0,0,1,2,2,1],"img":true},{"id":"prickly-pear","en":"Prickly pears","ar":"تين شوكي","cat":"fruit","org":["EG"],"note":"Cactus fruit, de-spined","m":[0,0,0,0,0,0,1,2,2,1,0,0],"img":true},{"id":"kiwi","en":"Kiwi","ar":"كيوي","cat":"fruit","org":["RG"],"note":"Hayward green","m":[1,1,1,1,2,2,2,2,2,1,1,1],"img":true},{"id":"loquat","en":"Loquats","ar":"بشملة","cat":"fruit","org":["EG"],"note":"Short spring season","m":[0,0,1,2,1,0,0,0,0,0,0,0],"img":true},{"id":"olive","en":"Table olives","ar":"زيتون","cat":"fruit","org":["EG"],"note":"Fresh green olives for curing","m":[0,0,0,0,0,0,0,0,1,2,1,0],"img":true},{"id":"mango","en":"Mangoes","ar":"مانجو","cat":"tropical","org":["EG","RG"],"note":"Keitt, Kent, Ewais, Zebda","m":[0,0,0,0,0,1,1,2,2,1,1,0],"img":true},{"id":"mango-red","en":"Red mangoes","ar":"مانجو حمراء","cat":"tropical","org":["RG","EG"],"note":"Tommy Atkins type","m":[1,1,1,2,2,2,2,2,1,1,1,1],"img":true},{"id":"banana","en":"Bananas","ar":"موز","cat":"tropical","org":["EG","RG"],"note":"Cavendish and Baladi","m":[1,1,1,1,1,1,1,2,2,2,2,1],"img":true},{"id":"banana-red","en":"Red bananas","ar":"موز أحمر","cat":"tropical","org":["RG"],"note":"Sweet, creamy","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"banana-finger","en":"Lady finger bananas","ar":"موز صغير","cat":"tropical","org":["RG"],"note":"Small and very sweet","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"guava","en":"Guava","ar":"جوافة","cat":"tropical","org":["EG"],"note":"White and pink flesh","m":[1,1,0,0,0,0,0,1,2,2,2,1],"img":true},{"id":"papaya","en":"Papaya","ar":"بابايا","cat":"tropical","org":["RG","EG"],"note":"Solo and Red Lady","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"pineapple","en":"Pineapples","ar":"أناناس","cat":"tropical","org":["RG"],"note":"MD2 Gold","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"pineapple-mini","en":"Baby pineapples","ar":"أناناس صغير","cat":"tropical","org":["RG"],"note":"Queen Victoria type","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"avocado","en":"Avocados","ar":"أفوكادو","cat":"tropical","org":["RG","EG"],"note":"Hass and Fuerte","m":[1,1,2,2,2,2,2,2,1,1,1,1],"img":true},{"id":"coconut","en":"Coconuts","ar":"جوز الهند","cat":"tropical","org":["RG"],"note":"Mature brown and young","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"dragon-fruit","en":"Dragon fruit","ar":"فاكهة التنين","cat":"tropical","org":["RG"],"note":"Red skin, white or red flesh","m":[1,1,1,1,1,2,2,2,2,2,1,1],"img":true},{"id":"passion-fruit","en":"Passion fruit","ar":"باشن فروت","cat":"tropical","org":["RG"],"note":"Purple","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"lychee","en":"Lychee","ar":"ليتشي","cat":"tropical","org":["RG"],"note":"Fresh in season","m":[0,0,0,0,1,2,2,1,0,0,0,0],"img":true},{"id":"rambutan","en":"Rambutan","ar":"رامبوتان","cat":"tropical","org":["RG"],"note":"Fresh, red","m":[0,0,0,0,1,2,2,2,1,0,0,0],"img":true},{"id":"mangosteen","en":"Mangosteen","ar":"مانجوستين","cat":"tropical","org":["RG"],"note":"Fresh, purple","m":[0,0,0,0,1,2,2,2,1,0,0,0],"img":true},{"id":"starfruit","en":"Star fruit","ar":"كارامبولا","cat":"tropical","org":["RG"],"note":"Carambola","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"custard-apple","en":"Custard apples","ar":"قشطة","cat":"tropical","org":["EG"],"note":"Cherimoya type","m":[0,0,0,0,0,0,0,0,1,2,2,1],"img":true},{"id":"physalis","en":"Physalis","ar":"حرنكش","cat":"tropical","org":["EG"],"note":"Golden berry, in husk","m":[2,1,1,0,0,0,0,0,0,1,1,2],"img":true},{"id":"dates","en":"Fresh dates","ar":"تمر","cat":"tropical","org":["AE","EG"],"note":"Khalas, Barhi, Siwi, Medjool","m":[1,1,1,1,1,1,1,2,2,2,1,1],"img":true},{"id":"granadilla","en":"Granadilla","ar":"جراناديلا","cat":"tropical","org":["RG"],"note":"Sweet passion fruit","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"tamarillo","en":"Tamarillo","ar":"طماطم الشجر","cat":"tropical","org":["RG"],"note":"Tree tomato","m":[0,0,0,1,1,1,1,1,1,1,0,0],"img":true},{"id":"salak","en":"Salak","ar":"صلك","cat":"tropical","org":["RG"],"note":"Snake fruit","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"jujube","en":"Nabq jujube","ar":"نبق","cat":"tropical","org":["AE","EG"],"note":"Local Sidr fruit","m":[2,1,1,0,0,0,0,0,0,0,1,2],"img":true},{"id":"sapodilla","en":"Sapodilla","ar":"شيكو","cat":"tropical","org":["RG"],"note":"Chikoo","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"jackfruit","en":"Jackfruit","ar":"جاك فروت","cat":"tropical","org":["RG"],"note":"Whole and cut","m":[0,0,1,1,1,1,1,1,0,0,0,0],"img":true},{"id":"sugarcane","en":"Sugarcane","ar":"قصب السكر","cat":"tropical","org":["EG"],"note":"Fresh stalks","m":[2,2,2,1,0,0,0,0,0,0,1,1],"img":false},{"id":"strawberry","en":"Strawberries","ar":"فراولة","cat":"berries","org":["EG"],"note":"Festival and Fortuna","m":[2,2,2,1,0,0,0,0,0,0,1,1],"img":true},{"id":"blueberry","en":"Blueberries","ar":"توت أزرق","cat":"berries","org":["EG","RG"],"note":"125 g punnets","m":[1,2,2,2,1,0,0,0,0,1,1,1],"img":true},{"id":"raspberry","en":"Raspberries","ar":"توت العليق","cat":"berries","org":["RG"],"note":"Red","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"blackberry","en":"Blackberries","ar":"توت أسود","cat":"berries","org":["RG"],"note":"Cultivated","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"mulberry","en":"Mulberries","ar":"توت","cat":"berries","org":["EG"],"note":"Short spring season","m":[0,0,0,2,1,0,0,0,0,0,0,0],"img":true},{"id":"redcurrant","en":"Red currants","ar":"كشمش أحمر","cat":"berries","org":["RG"],"note":"On the stem","m":[0,0,0,0,0,1,1,1,1,0,0,0],"img":true},{"id":"gooseberry","en":"Gooseberries","ar":"عنب الثعلب","cat":"berries","org":["RG"],"note":"Green","m":[0,0,0,0,0,1,1,1,0,0,0,0],"img":true},{"id":"cherry","en":"Cherries","ar":"كرز","cat":"berries","org":["RG"],"note":"Dark red","m":[1,0,0,0,1,2,2,1,0,0,0,1],"img":true},{"id":"cherry-rainier","en":"Rainier cherries","ar":"كرز رينيير","cat":"berries","org":["RG"],"note":"Yellow-blush","m":[0,0,0,0,0,1,2,1,0,0,0,0],"img":true},{"id":"watermelon","en":"Watermelons","ar":"بطيخ","cat":"melons","org":["EG","AE"],"note":"Crimson Sweet, Giza, seedless","m":[0,0,0,1,2,2,2,1,1,0,0,0],"img":true},{"id":"cantaloupe","en":"Cantaloupes","ar":"كانتالوب","cat":"melons","org":["EG","AE"],"note":"Netted, orange flesh","m":[0,0,1,1,2,2,1,1,1,0,0,0],"img":true},{"id":"melon","en":"Galia and green melons","ar":"شمام","cat":"melons","org":["EG","RG"],"note":"Galia, Ismailawi, Piel de Sapo","m":[0,0,0,1,2,2,2,1,1,0,0,0],"img":true},{"id":"tomato","en":"Tomatoes","ar":"طماطم","cat":"veg","org":["AE","EG"],"note":"Round, loose and on the vine","m":[2,2,2,1,1,1,1,1,1,1,1,2],"img":true},{"id":"tomato-heart","en":"Beef tomatoes","ar":"طماطم بلدي كبيرة","cat":"veg","org":["AE","RG"],"note":"Large, ribbed","m":[2,2,2,1,1,1,1,1,1,1,1,2],"img":true},{"id":"tomato-maroon","en":"Maroon tomatoes","ar":"طماطم داكنة","cat":"veg","org":["RG"],"note":"Dark, sweet slicing type","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"tomato-yellow","en":"Yellow tomatoes","ar":"طماطم صفراء","cat":"veg","org":["AE","RG"],"note":"Mild and sweet","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"cherry-tomato","en":"Cherry tomatoes","ar":"طماطم شيري","cat":"veg","org":["AE"],"note":"Red, on and off the vine","m":[2,2,2,1,1,0,0,0,0,1,1,2],"img":true},{"id":"cherry-tomato-yellow","en":"Yellow cherry tomatoes","ar":"طماطم شيري صفراء","cat":"veg","org":["AE"],"note":"Snacking","m":[2,2,2,1,1,0,0,0,0,1,1,2],"img":true},{"id":"cherry-tomato-orange","en":"Orange cherry tomatoes","ar":"طماطم شيري برتقالي","cat":"veg","org":["AE"],"note":"Snacking","m":[2,2,2,1,1,0,0,0,0,1,1,2],"img":true},{"id":"cherry-tomato-maroon","en":"Maroon cherry tomatoes","ar":"طماطم شيري داكنة","cat":"veg","org":["AE","RG"],"note":"Kumato type","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"cucumber","en":"Cucumbers","ar":"خيار","cat":"veg","org":["AE","EG"],"note":"Beit Alpha and mini","m":[2,2,2,2,1,1,1,1,1,1,2,2],"img":true},{"id":"zucchini","en":"Zucchini","ar":"كوسة","cat":"veg","org":["AE","EG"],"note":"Light green, Egyptian type","m":[2,2,2,1,1,1,1,1,1,1,2,2],"img":true},{"id":"zucchini-dark","en":"Dark zucchini","ar":"كوسة داكنة","cat":"veg","org":["RG","AE"],"note":"European dark green","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"eggplant","en":"Round eggplant","ar":"باذنجان رومي","cat":"veg","org":["EG","AE"],"note":"Large, black","m":[2,2,2,1,1,1,1,1,1,1,2,2],"img":true},{"id":"eggplant-long","en":"Long eggplant","ar":"باذنجان طويل","cat":"veg","org":["EG","AE"],"note":"Slim, for stuffing","m":[2,2,2,1,1,1,1,1,1,1,2,2],"img":true},{"id":"pepper-green","en":"Green bell peppers","ar":"فلفل رومي أخضر","cat":"veg","org":["EG","AE"],"note":"Blocky","m":[2,2,2,2,1,1,1,1,1,1,2,2],"img":true},{"id":"pepper-red","en":"Red bell peppers","ar":"فلفل رومي أحمر","cat":"veg","org":["AE","RG"],"note":"Blocky","m":[2,2,2,1,1,1,1,1,1,1,1,2],"img":true},{"id":"pepper-yellow","en":"Yellow bell peppers","ar":"فلفل رومي أصفر","cat":"veg","org":["AE","RG"],"note":"Blocky","m":[2,2,2,1,1,1,1,1,1,1,1,2],"img":true},{"id":"pepper-orange","en":"Orange bell peppers","ar":"فلفل رومي برتقالي","cat":"veg","org":["RG"],"note":"Sweet, thick-walled","m":[2,2,2,1,1,1,1,1,1,1,1,2],"img":true},{"id":"chilli","en":"Chillies","ar":"فلفل حار","cat":"veg","org":["EG","AE"],"note":"Long green and red","m":[2,2,2,1,1,1,1,1,1,1,2,2],"img":true},{"id":"corn","en":"Sweet corn","ar":"ذرة حلوة","cat":"veg","org":["EG"],"note":"Fresh cobs","m":[0,0,0,0,1,2,2,2,1,1,0,0],"img":true},{"id":"green-beans","en":"Green beans","ar":"فاصوليا خضراء","cat":"veg","org":["EG","AE"],"note":"Fine and flat","m":[2,2,1,1,1,0,0,0,0,1,2,2],"img":true},{"id":"mushroom","en":"Mushrooms","ar":"مشروم","cat":"veg","org":["RG","AE"],"note":"White button","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"okra","en":"Okra","ar":"بامية","cat":"veg","org":["EG","AE"],"note":"Small, tender pods","m":[0,0,0,1,1,2,2,2,1,1,1,0],"img":true},{"id":"peas","en":"Green peas","ar":"بسلة","cat":"veg","org":["EG"],"note":"In the pod","m":[2,2,2,1,0,0,0,0,0,0,0,1],"img":true},{"id":"fava","en":"Fresh fava beans","ar":"فول أخضر","cat":"veg","org":["EG"],"note":"In the pod","m":[2,2,1,0,0,0,0,0,0,0,0,1],"img":true},{"id":"artichoke","en":"Artichokes","ar":"خرشوف","cat":"veg","org":["EG"],"note":"Globe, Baladi and French","m":[1,2,2,1,0,0,0,0,0,0,0,1],"img":true},{"id":"pumpkin","en":"Pumpkin","ar":"قرع عسلي","cat":"veg","org":["EG","RG"],"note":"Whole and cut","m":[1,1,1,1,1,1,1,1,2,2,2,2],"img":true},{"id":"butternut","en":"Butternut squash","ar":"قرع بترنات","cat":"veg","org":["RG","EG"],"note":"Sweet, dense","m":[1,1,1,1,1,1,1,1,2,2,2,2],"img":true},{"id":"bitter-gourd","en":"Bitter gourd","ar":"كريلا","cat":"veg","org":["RG"],"note":"For South Asian cuisine","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"bottle-gourd","en":"Bottle gourd","ar":"قرع لوكي","cat":"veg","org":["RG"],"note":"Long, pale green","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"asparagus","en":"Asparagus","ar":"هليون","cat":"veg","org":["RG","EG"],"note":"Green spears","m":[1,2,2,2,1,0,0,0,0,0,1,1],"img":true},{"id":"potato","en":"Potatoes","ar":"بطاطس","cat":"roots","org":["EG"],"note":"Spunta, washed","m":[1,1,2,2,2,1,1,1,1,1,1,1],"img":true},{"id":"potato-red","en":"Red potatoes","ar":"بطاطس حمراء","cat":"roots","org":["EG","RG"],"note":"Red skin","m":[1,1,2,2,2,1,1,1,1,1,1,1],"img":true},{"id":"sweet-potato","en":"Sweet potatoes","ar":"بطاطا","cat":"roots","org":["EG"],"note":"Orange flesh","m":[2,1,1,1,0,0,0,0,0,1,2,2],"img":true},{"id":"carrot","en":"Carrots","ar":"جزر","cat":"roots","org":["EG","RG"],"note":"Washed, topped","m":[2,2,2,2,1,1,1,1,1,1,1,1],"img":true},{"id":"beetroot","en":"Beetroot","ar":"بنجر","cat":"roots","org":["EG"],"note":"Topped, washed","m":[2,2,2,1,1,0,0,0,0,0,1,1],"img":true},{"id":"ginger","en":"Ginger","ar":"زنجبيل","cat":"roots","org":["RG"],"note":"Fresh root","m":[1,1,1,1,1,1,1,1,1,1,1,1],"img":true},{"id":"onion-red","en":"Red onions","ar":"بصل أحمر","cat":"roots","org":["EG"],"note":"Medium and large","m":[1,1,1,2,2,2,1,1,1,1,1,1],"img":true},{"id":"onion-white","en":"White onions","ar":"بصل أبيض","cat":"roots","org":["EG"],"note":"Sweet, mild","m":[1,1,1,2,2,2,1,1,1,1,1,1],"img":true},{"id":"onion-yellow","en":"Golden onions","ar":"بصل أصفر","cat":"roots","org":["EG"],"note":"Giza and Beheira","m":[1,1,1,2,2,2,1,1,1,1,1,1],"img":true},{"id":"garlic","en":"Garlic","ar":"ثوم","cat":"roots","org":["EG"],"note":"Dried, white and purple","m":[1,1,1,1,2,2,2,1,1,1,1,1],"img":true},{"id":"kohlrabi","en":"Kohlrabi","ar":"كرنب أبو ركبة","cat":"roots","org":["EG","RG"],"note":"Green","m":[2,2,2,1,0,0,0,0,0,0,1,1],"img":true},{"id":"radish","en":"Radish","ar":"فجل","cat":"roots","org":["EG","AE"],"note":"Red and white","m":[2,2,1,1,0,0,0,0,0,1,1,2],"img":true},{"id":"turnip","en":"Turnips","ar":"لفت","cat":"roots","org":["EG"],"note":"White, purple top","m":[2,2,1,0,0,0,0,0,0,0,1,2],"img":true},{"id":"taro","en":"Taro","ar":"قلقاس","cat":"roots","org":["EG"],"note":"Colocasia","m":[2,1,1,0,0,0,0,0,0,1,2,2],"img":true},{"id":"spring-onion","en":"Spring onions","ar":"بصل أخضر","cat":"roots","org":["EG","AE"],"note":"Bunches","m":[2,2,2,1,1,1,1,1,1,1,2,2],"img":true},{"id":"cabbage","en":"White cabbage","ar":"كرنب أبيض","cat":"greens","org":["EG","AE"],"note":"Firm heads","m":[2,2,1,1,1,1,1,1,1,1,1,2],"img":true},{"id":"cabbage-red","en":"Red cabbage","ar":"كرنب أحمر","cat":"greens","org":["EG","RG"],"note":"Firm heads","m":[2,2,1,1,1,1,1,1,1,1,1,2],"img":true},{"id":"cauliflower","en":"Cauliflower","ar":"قرنبيط","cat":"greens","org":["EG","AE"],"note":"White, trimmed","m":[2,2,1,1,0,0,0,0,0,1,1,2],"img":true},{"id":"broccoli","en":"Broccoli","ar":"بروكلي","cat":"greens","org":["EG","RG"],"note":"Crowns","m":[2,2,1,1,0,0,0,0,0,1,1,2],"img":true},{"id":"fennel","en":"Fennel","ar":"شمر","cat":"veg","org":["EG"],"note":"Bulbs","m":[2,2,2,1,0,0,0,0,0,0,1,1],"img":true}]}</script>
-<script>
-(function(){
-  var D=JSON.parse(document.getElementById('data').textContent);
-  var P=D.products, CATS=D.cats;
-  var MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-  var FULL=['January','February','March','April','May','June','July','August','September','October','November','December'];
-  var ORG={EG:['eg','Egypt'],AE:['ae','UAE'],RG:['rg','Regional']};
-  var now=new Date().getMonth();
-  var state={m:now,cat:'all',peak:false,limit:16};
-
-  document.getElementById('yr').textContent=new Date().getFullYear();
-  // hero video
-  var vid=document.querySelector('.hero-video'),vt=document.querySelector('.vid-toggle');
-  function setPlaying(p){if(p){var pr=vid.play();if(pr&&pr.catch)pr.catch(function(){})}else{vid.pause()}vt.textContent=p?'Pause video':'Play video';vt.setAttribute('aria-pressed',String(!p))}
-  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){vid.removeAttribute('autoplay');setPlaying(false)}
-  vt.addEventListener('click',function(){setPlaying(vid.paused)});
-
-
-  // menu
-  var mb=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
-  mb.addEventListener('click',function(){var o=nav.classList.toggle('open');mb.setAttribute('aria-expanded',o);mb.textContent=o?'Close':'Menu'});
-  nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');mb.setAttribute('aria-expanded','false');mb.textContent='Menu'}});
-
-  // months
-  var mEl=document.querySelector('.months');
-  MONTHS.forEach(function(n,i){
-    var b=document.createElement('button');b.type='button';b.textContent=n;b.setAttribute('aria-label',FULL[i]);
-    if(i===now)b.className='now';
-    b.addEventListener('click',function(){state.m=i;state.limit=16;render()});
-    mEl.appendChild(b);
-  });
-  // chips
-  var cEl=document.querySelector('.chips');
-  [{key:'all',name:'Everything'}].concat(CATS).forEach(function(c){
-    var b=document.createElement('button');b.type='button';b.textContent=c.name;b.dataset.k=c.key;
-    b.addEventListener('click',function(){state.cat=c.key;state.limit=16;render()});
-    cEl.appendChild(b);
-  });
-  document.getElementById('peakOnly').addEventListener('change',function(e){state.peak=e.target.checked;state.limit=16;render()});
-  var more=document.getElementById('moreBtn');
-  more.addEventListener('click',function(){state.limit=999;render()});
-
-  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-
-  function card(p){
-    var plate=p.img?'<img src="img/'+p.id+'.webp" alt="" loading="lazy" width="480" height="480">':'<span class="mono" aria-hidden="true">'+esc(p.ar.charAt(0))+'</span>';
-    var tags=p.org.map(function(o){var x=ORG[o];return x?'<span class="tag '+x[0]+'">'+x[1]+'</span>':''}).join('');
-    var bar=p.m.map(function(v,i){return '<i class="'+(v===2?'p':v===1?'a':'')+(i===state.m?' sel':'')+'"></i>'}).join('');
-    var label=FULL.filter(function(_,i){return p.m[i]===2}).join(', ');
-    return '<article class="item"><div class="plate">'+plate+'</div><h3>'+esc(p.en)+'</h3><div class="ar" lang="ar">'+esc(p.ar)+'</div>'+
-      (p.note?'<p class="desc">'+esc(p.note)+'</p>':'')+
-      '<div class="meta"><div class="tags">'+tags+'</div><div class="season" role="img" aria-label="Peak months: '+esc(label||'none listed')+'">'+bar+'</div></div></article>';
-  }
-
-  function render(){
-    [].forEach.call(mEl.children,function(b,i){b.setAttribute('aria-pressed',i===state.m)});
-    [].forEach.call(cEl.children,function(b){b.setAttribute('aria-pressed',b.dataset.k===state.cat)});
-    var list=P.filter(function(p){
-      var v=p.m[state.m];
-      return v>=(state.peak?2:1)&&(state.cat==='all'||p.cat===state.cat);
-    }).sort(function(a,b){return (b.m[state.m]-a.m[state.m])||((b.img?1:0)-(a.img?1:0))||a.en.localeCompare(b.en)});
-    var peak=list.filter(function(p){return p.m[state.m]===2}).length;
-    var catName=state.cat==='all'?'':' in '+CATS.filter(function(c){return c.key===state.cat})[0].name.toLowerCase();
-    var s=document.querySelector('.summary');
-    if(!list.length){s.textContent='';document.querySelector('.grid').innerHTML='<div class="empty">Nothing'+esc(catName)+' is '+(state.peak?'at its peak':'in season')+' in '+FULL[state.m]+'. Try another month or category.</div>';more.hidden=true;return}
-    s.innerHTML='In '+FULL[state.m]+' we supply <b>'+list.length+'</b> '+(list.length===1?'line':'lines')+esc(catName)+(state.peak?', all at their peak.':', '+peak+' of them at their peak.');
-    document.querySelector('.grid').innerHTML=list.slice(0,state.limit).map(card).join('');
-    more.hidden=list.length<=state.limit;
-    more.textContent='Show all '+list.length;
-  }
-  render();
-
-  // enquiry
-  document.getElementById('enquiry').addEventListener('submit',function(e){
-    e.preventDefault();
-    var f=e.target,err=document.getElementById('formErr');
-    var name=f.name.value.trim(),email=f.email.value.trim(),msg=f.message.value.trim();
-    var missing=[];if(!name)missing.push('your name');if(!/^\S+@\S+\.\S+$/.test(email))missing.push('a valid email');if(!msg)missing.push('what you need');
-    if(missing.length){err.hidden=false;err.textContent='Add '+missing.join(', ')+' to send your enquiry.';return}
-    err.hidden=true;
-    var body='Name: '+name+'\nCompany: '+f.company.value.trim()+'\nEmail: '+email+'\nType: '+f.type.value+'\n\n'+msg;
-    location.href='mailto:info@agrinova.ae?subject='+encodeURIComponent('Enquiry from '+(f.company.value.trim()||name))+'&body='+encodeURIComponent(body);
-  });
-})();
-</script>
+<script src="data.js"></script>
+<script src="site.js"></script>
 </body>
 </html>

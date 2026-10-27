@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Produce calendar | Agrinova Global</title>
+<meta name="description" content="Fresh fruit and vegetables supplied by Agrinova Global, month by month, with origins and peak seasons.">
+<meta name="theme-color" content="#0F3B2E">
+<meta property="og:title" content="Produce calendar | Agrinova Global">
+<meta property="og:description" content="Fresh fruit and vegetables supplied by Agrinova Global, month by month, with origins and peak seasons.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,50&family=Figtree:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html" aria-label="Agrinova Global, home"><img src="logo-light.png" alt="Agrinova" width="178" height="36"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html#origins">Where we grow</a>
+      <a href="produce.html" aria-current="page">Produce</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="index.html#about">About</a>
+      <a class="cta" href="index.html#partner">Partner with us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <a class="crumb" href="index.html">Home</a>
+    <h1>Produce, month by month.</h1>
+    <p>Everything we supply across the year, from our own farms in Egypt, UAE growers and trusted regional farms. Choose a month to see what's in season and where it comes from.</p>
+  </div>
+</section>
+
+<section class="sec" id="produce">
+  <div class="wrap">
+    <div class="months" role="group" aria-label="Month"></div>
+    <div class="controls">
+      <div class="chips" role="group" aria-label="Category"></div>
+      <label class="toggle"><input type="checkbox" id="peakOnly"> Peak season only</label>
+    </div>
+    <p class="summary" aria-live="polite"></p>
+    <div class="grid"></div>
+    <div class="more"><button class="btn dark" id="moreBtn" hidden>Show all</button></div>
+    <div class="legend">
+      <span><i style="background:var(--forest-3)"></i>Peak season</span>
+      <span><i style="background:#9DB8A6"></i>Available</span>
+      <span><i style="background:var(--line)"></i>Out of season</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec tight">
+  <div class="wrap">
+    <div class="cta-band">
+      <div>
+        <h2>Plan your next season with us.</h2>
+        <p>Tell us what you're buying and when. Our trading desk will come back with availability, origin options and pricing.</p>
+      </div>
+      <a class="btn solid" href="index.html#partner">Talk to our trading desk</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div>
+        <a class="mark" href="index.html"><img src="logo-light.png" alt="Agrinova" width="158" height="32"></a>
+        <p style="margin-top:14px">Agrinova Global General Trading L.L.C.</p>
+        <p>Fresh Market, Ras Al Khor, Dubai, UAE</p>
+      </div>
+      <div>
+        <p><a href="produce.html">Produce</a></p>
+        <p><a href="sustainability.html">Sustainability</a></p>
+        <p><a href="index.html#partner">Partner with us</a></p>
+      </div>
+      <div>
+        <p><a href="mailto:info@agrinova.ae">info@agrinova.ae</a></p>
+        <p>Trade licence 1124081</p>
+      </div>
+    </div>
+    <p class="fine">© <span id="yr"></span> Agrinova Global General Trading L.L.C. Video from Pexels; product photographs from Unsplash, with some from the Fruits-360 dataset by Horea Mureșan and contributors (CC BY-SA 4.0), adapted as cutouts for this site.</p>
+  </div>
+</footer>
+<script src="data.js"></script>
+<script src="site.js"></script>
+<script src="produce.js"></script>
+</body>
+</html>
