@@ -330,3 +330,5 @@ footer a{color:var(--on-forest)}
 @keyframes sunarc{from{transform:rotate(-38deg)}to{transform:rotate(38deg)}}
 @media (prefers-reduced-motion:reduce){.flow-dash,.ray,.sunmove{animation:none}}
 @media (max-width:900px){.pyr-grid{grid-template-columns:1fr;gap:32px}.pyr-grid.flip .pyr-copy{order:0}.pyr-grid+.pyr-grid{margin-top:64px}}
+.stage-label{position:absolute;left:0;top:0;pointer-events:none;font:600 .8rem var(--sans);color:#14241D;background:rgba(246,247,242,.92);padding:5px 10px;border-radius:999px;white-space:nowrap;box-shadow:0 2px 8px rgba(0,0,0,.18);transition:opacity .2s}
+.stage{background:#e9cf9f}
