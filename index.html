@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,50&family=Figtree:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap">
-<link rel="stylesheet" href="styles.css?v=202610280355">
+<link rel="stylesheet" href="styles.css?v=202610280611">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -93,6 +93,63 @@
     </div>
   </div>
 </section>
+
+<section class="sec pyr" id="pyramid">
+  <div class="wrap">
+    <div class="pyr-grid">
+      <div class="pyr-copy">
+        <span class="concept-tag">Concept design</span>
+        <h2>Built on a shape Egypt has trusted for 4,500 years.</h2>
+        <p>Our pyramid greenhouse takes the geometry of our roots and puts it to work in the desert. Every angle has a job: catching light, moving air and standing up to wind and sand.</p>
+      </div>
+      <div class="stage" id="stage"><span class="hint">Drag to look around</span></div>
+    </div>
+    <div class="pyr-grid flip">
+      <div class="pyr-copy">
+        <h3 class="sub">How the shape works.</h3>
+        <ul class="pyr-points">
+          <li><i>1</i><div><b>Light from every side</b><span>Four sloped glass faces catch the low morning and evening sun, not just the midday light.</span></div></li>
+          <li><i>2</i><div><b>Air that moves itself</b><span>Warm air rises into the apex and vents out, drawing cooler air in at plant level.</span></div></li>
+          <li><i>3</i><div><b>Strength with less material</b><span>Triangular faces brace each other and shed wind and sand rather than catching them.</span></div></li>
+        </ul>
+      </div>
+      <svg viewBox="0 0 640 520" role="img" aria-label="Animated cross-section of a pyramid greenhouse showing sunlight and airflow">
+      <rect width="640" height="520" rx="28" fill="#123A2D"/>
+      <!-- sun on arc -->
+      <path d="M30 400 A290 290 0 0 1 610 400" fill="none" stroke="rgba(238,240,231,.18)" stroke-dasharray="3 7"/>
+      <g class="sunmove"><circle cx="320" cy="110" r="20" fill="#E09A2D"/><circle cx="320" cy="110" r="36" fill="#E09A2D" opacity=".15"/></g>
+      <!-- ground -->
+      <rect x="0" y="420" width="640" height="100" fill="#1C5241"/>
+      <line x1="40" y1="420" x2="600" y2="420" stroke="rgba(238,240,231,.25)"/>
+      <!-- pyramid section -->
+      <polygon points="320,170 130,420 510,420" fill="rgba(157,200,174,.10)" stroke="#AEC0B3" stroke-width="2"/>
+      <polygon points="320,170 306,190 334,190" fill="#E09A2D"/>
+      <!-- light rays -->
+      <g stroke="#E09A2D" stroke-width="2" opacity=".85">
+        <line class="ray" x1="150" y1="210" x2="250" y2="330"/><line class="ray" x1="120" y1="250" x2="215" y2="360"/>
+        <line class="ray" x1="490" y1="210" x2="390" y2="330"/><line class="ray" x1="520" y1="250" x2="425" y2="360"/>
+      </g>
+      <!-- airflow: in low, up, out apex -->
+      <g fill="none" stroke="#9DD3B4" stroke-width="2.4" stroke-linecap="round">
+        <path class="flow-dash" d="M60 405 H170 Q230 400 260 360 Q300 300 316 200 L320 130"/>
+        <path class="flow-dash" d="M580 405 H470 Q410 400 380 360 Q340 300 324 200 L320 130"/>
+        <path class="flow-dash" d="M320 130 Q300 100 270 80"/><path class="flow-dash" d="M320 130 Q340 100 370 80"/>
+      </g>
+      <!-- crops -->
+      <g fill="#3E8A66">
+        <ellipse cx="200" cy="410" rx="18" ry="10"/><ellipse cx="250" cy="410" rx="18" ry="10"/><ellipse cx="300" cy="410" rx="18" ry="10"/>
+        <ellipse cx="350" cy="410" rx="18" ry="10"/><ellipse cx="400" cy="410" rx="18" ry="10"/><ellipse cx="450" cy="410" rx="18" ry="10"/>
+      </g>
+      <g font-family="Figtree,system-ui,sans-serif" font-size="13" fill="#EEF0E7">
+        <text x="262" y="72" text-anchor="end">Warm air out</text>
+        <text x="60" y="395">Cool air in</text>
+        <text x="80" y="232">Low sun through angled glass</text>
+      </g>
+    </svg>
+    </div>
+  </div>
+</section>
+
 
 <section class="sec approach" id="approach">
   <div class="wrap">
@@ -205,6 +262,9 @@
     <p class="fine">© <span id="yr"></span> Agrinova Global General Trading L.L.C. Video from Pexels; product photographs from Unsplash, with some from the Fruits-360 dataset by Horea Mureșan and contributors (CC BY-SA 4.0), adapted as cutouts for this site.</p>
   </div>
 </footer>
-<script src="site.js?v=202610280355"></script>
+<script src="site.js?v=202610280611"></script>
+<script src="vendor/three.min.js"></script>
+<script src="vendor/OrbitControls.js"></script>
+<script src="pyramid.js?v=202610280611"></script>
 </body>
 </html>

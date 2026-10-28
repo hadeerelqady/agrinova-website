@@ -303,3 +303,30 @@ footer a{color:var(--on-forest)}
 @media (max-width:1000px){.pack-points{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:900px){.pack{grid-template-columns:1fr;gap:28px}}
 @media (max-width:560px){.pack-points{grid-template-columns:1fr}}
+
+/* Pyramid concept */
+.pyr{background:#0B2A20;color:var(--on-forest)}
+.pyr-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.pyr-grid+.pyr-grid{margin-top:96px}
+.pyr-grid.flip .pyr-copy{order:2}
+.pyr-copy h2{font-size:clamp(2.2rem,4.6vw,3.8rem);font-weight:340}
+.pyr-copy h3.sub{font-size:clamp(1.7rem,3vw,2.4rem);font-weight:360}
+.pyr-copy>p{margin-top:20px;font-size:1.12rem;max-width:32em;color:var(--on-forest-muted)}
+.concept-tag{display:inline-block;font:500 .82rem var(--sans);color:var(--on-forest-muted);border:1px solid var(--forest-line);border-radius:999px;padding:5px 12px;margin-bottom:22px}
+.pyr-points{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:18px}
+.pyr-points li{display:grid;grid-template-columns:28px 1fr;gap:14px;align-items:start}
+.pyr-points i{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-style:normal;font:600 .85rem var(--sans);background:var(--saffron);color:var(--ink)}
+.pyr-points b{display:block;font-family:var(--serif);font-weight:440;font-size:1.2rem}
+.pyr-points span{font-size:.98rem;color:var(--on-forest-muted)}
+.stage{position:relative;aspect-ratio:5/4;border-radius:28px;overflow:hidden;background:#1c3c30}
+.stage canvas{display:block;width:100%!important;height:100%!important;cursor:grab;touch-action:pan-y}
+.stage .hint{position:absolute;left:16px;bottom:14px;font-size:.82rem;color:var(--on-forest-muted);pointer-events:none}
+.pyr-grid>svg{width:100%;height:auto;border-radius:28px;overflow:hidden}
+.flow-dash{stroke-dasharray:6 10;animation:flowup 1.6s linear infinite}
+@keyframes flowup{to{stroke-dashoffset:-32}}
+.ray{stroke-dasharray:4 8;animation:rays 2.4s linear infinite}
+@keyframes rays{to{stroke-dashoffset:-24}}
+.sunmove{animation:sunarc 12s ease-in-out infinite alternate;transform-origin:320px 400px;transform-box:view-box}
+@keyframes sunarc{from{transform:rotate(-38deg)}to{transform:rotate(38deg)}}
+@media (prefers-reduced-motion:reduce){.flow-dash,.ray,.sunmove{animation:none}}
+@media (max-width:900px){.pyr-grid{grid-template-columns:1fr;gap:32px}.pyr-grid.flip .pyr-copy{order:0}.pyr-grid+.pyr-grid{margin-top:64px}}
