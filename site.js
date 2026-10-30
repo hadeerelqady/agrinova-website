@@ -58,3 +58,7 @@
     });
   }
 })();
+(function(){var v=document.querySelector('.gh-film video'),b=document.querySelector('.gh-toggle');if(!v||!b)return;
+  function set(p){if(p){var pr=v.play();if(pr&&pr.catch)pr.catch(function(){})}else v.pause();b.textContent=p?'Pause':'Play';b.setAttribute('aria-pressed',String(!p))}
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches){v.removeAttribute('autoplay');set(false)}
+  b.addEventListener('click',function(){set(v.paused)});})();
