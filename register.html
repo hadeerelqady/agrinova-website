@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Register | Agrinova Global</title>
+<meta name="description" content="Register with Agrinova Global as a supplier or farm, or as a retail, wholesale or food service customer in the UAE and GCC.">
+<meta name="theme-color" content="#0F3B2E">
+<meta property="og:title" content="Register | Agrinova Global">
+<meta property="og:description" content="Register with Agrinova Global as a supplier or farm, or as a retail, wholesale or food service customer in the UAE and GCC.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,50&family=Figtree:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css?v=202610301705">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="index.html" aria-label="Agrinova Global, home"><img src="logo-light.png" alt="Agrinova" width="178" height="36"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="index.html#origins">Where we grow</a>
+      <a href="produce.html">Produce</a>
+      <a href="sustainability.html">Sustainability</a>
+      <a href="index.html#about">About</a>
+      <a class="cta" href="register.html" aria-current="page">Partner with us</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <a class="crumb" href="index.html">Home</a>
+    <h1>Work with Agrinova.</h1>
+    <p>Register as a supplier if you grow or pack fresh produce, or as a customer if you buy for retail, wholesale or food service. Our team reviews every registration and replies within two working days.</p>
+  </div>
+</section>
+
+<section class="sec reg-sec">
+  <div class="wrap">
+    <div class="reg-tabs" role="tablist" aria-label="Registration type">
+      <button class="reg-tab" role="tab" id="tab-supplier" aria-controls="panel-supplier" data-k="supplier">
+        <b>Supplier or farm</b><span>You grow, pack or export fresh produce</span>
+      </button>
+      <button class="reg-tab" role="tab" id="tab-customer" aria-controls="panel-customer" data-k="customer">
+        <b>Customer</b><span>You buy for retail, wholesale or food service</span>
+      </button>
+    </div>
+
+    <!-- ================= SUPPLIER ================= -->
+    <div class="reg-panel" id="panel-supplier" role="tabpanel" aria-labelledby="tab-supplier">
+      <div class="reg-grid">
+        <aside class="reg-aside">
+          <h2>Grow with us.</h2>
+          <p>We work directly with farms and packhouses across Egypt, the UAE and the wider region. Register to be considered for our seasonal sourcing programmes.</p>
+          <ol class="reg-steps">
+            <li><b>Register</b><span>Tell us about your farm, products and capacity.</span></li>
+            <li><b>Review</b><span>Our sourcing team checks fit with our seasons and buyers.</span></li>
+            <li><b>Documents and samples</b><span>We ask for your licence, certificates and, where needed, samples.</span></li>
+            <li><b>Programme</b><span>We agree volumes, packing specs and a harvest calendar.</span></li>
+          </ol>
+        </aside>
+
+        <div class="reg-card">
+          <form class="reg" data-kind="supplier" novalidate>
+            <fieldset>
+              <legend>Your farm or company</legend>
+              <div class="reg-row">
+                <label>Farm or company name<input name="company" data-label="Farm or company" required autocomplete="organization"></label>
+                <label>Type of business
+                  <select name="btype" data-label="Type of business">
+                    <option>Farm / grower</option><option>Packhouse</option><option>Exporter</option><option>Cooperative</option><option>Other</option>
+                  </select>
+                </label>
+              </div>
+              <div class="reg-row">
+                <label>Country
+                  <select name="country" data-label="Country" required>
+                    <option value="">Choose a country</option>
+                    <option>Egypt</option><option>United Arab Emirates</option><option>Syria</option><option>Lebanon</option><option>Turkey</option><option>Azerbaijan</option><option>Armenia</option><option>Morocco</option><option>South Africa</option><option>Other</option>
+                  </select>
+                </label>
+                <label>Region or city<input name="region" data-label="Region or city" placeholder="For example, Nubaria or Al Ain"></label>
+              </div>
+              <div class="reg-row">
+                <label>Farm size <small>(optional)</small><input name="size" data-label="Farm size" placeholder="For example, 200 feddans or 80 hectares"></label>
+                <label>Trade or export licence no. <small>(optional)</small><input name="licence" data-label="Licence number"></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>What you supply</legend>
+              <div class="reg-chips" data-required-group="products you supply">
+                <label><input type="checkbox" name="products" value="Citrus" data-name="products" data-label="Products"><span>Citrus</span></label>
+                <label><input type="checkbox" name="products" value="Fruit"><span>Fruit</span></label>
+                <label><input type="checkbox" name="products" value="Tropical and exotic"><span>Tropical &amp; exotic</span></label>
+                <label><input type="checkbox" name="products" value="Berries and cherries"><span>Berries &amp; cherries</span></label>
+                <label><input type="checkbox" name="products" value="Melons"><span>Melons</span></label>
+                <label><input type="checkbox" name="products" value="Vegetables"><span>Vegetables</span></label>
+                <label><input type="checkbox" name="products" value="Roots and bulbs"><span>Roots &amp; bulbs</span></label>
+                <label><input type="checkbox" name="products" value="Cabbage and cauliflower"><span>Cabbage &amp; cauliflower</span></label>
+              </div>
+              <label class="full">Main products and varieties<textarea name="varieties" data-label="Main products and varieties" rows="3" placeholder="For example, Valencia oranges, Crimson seedless grapes, Spunta potatoes"></textarea></label>
+              <div class="reg-row">
+                <label>Season or harvest months<input name="season" data-label="Season" placeholder="For example, December to April"></label>
+                <label>Volume per season<input name="volume" data-label="Volume per season" placeholder="For example, 500 tonnes"></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Quality and logistics</legend>
+              <p class="reg-hint">Certifications you currently hold</p>
+              <div class="reg-chips">
+                <label><input type="checkbox" name="certs" value="GlobalG.A.P." data-name="certs" data-label="Certifications"><span>GlobalG.A.P.</span></label>
+                <label><input type="checkbox" name="certs" value="ISO 22000 / FSSC 22000"><span>ISO 22000 / FSSC 22000</span></label>
+                <label><input type="checkbox" name="certs" value="HACCP"><span>HACCP</span></label>
+                <label><input type="checkbox" name="certs" value="BRCGS"><span>BRCGS</span></label>
+                <label><input type="checkbox" name="certs" value="Organic"><span>Organic</span></label>
+                <label><input type="checkbox" name="certs" value="None yet"><span>None yet</span></label>
+              </div>
+              <div class="reg-row">
+                <label>Do you have your own packhouse?
+                  <select name="packhouse" data-label="Own packhouse"><option value="">Choose</option><option>Yes</option><option>No, we use a partner</option><option>No</option></select>
+                </label>
+                <label>Cold storage?
+                  <select name="cold" data-label="Cold storage"><option value="">Choose</option><option>Yes, our own</option><option>Yes, rented</option><option>No</option></select>
+                </label>
+              </div>
+              <label>Have you exported to the GCC before?
+                <select name="gcc" data-label="Exported to GCC before"><option value="">Choose</option><option>Yes, regularly</option><option>Yes, occasionally</option><option>Not yet</option></select>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Contact person</legend>
+              <div class="reg-row">
+                <label>Full name<input name="name" data-label="Contact name" required autocomplete="name"></label>
+                <label>Role<input name="role" data-label="Role" autocomplete="organization-title" placeholder="For example, Owner or Export manager"></label>
+              </div>
+              <div class="reg-row">
+                <label>Email<input name="email" type="email" data-label="Email" required autocomplete="email"></label>
+                <label>Phone or WhatsApp<input name="phone" type="tel" data-label="Phone or WhatsApp" required autocomplete="tel" placeholder="With country code"></label>
+              </div>
+              <label class="full">Anything else we should know? <small>(optional)</small><textarea name="notes" data-label="Notes" rows="3"></textarea></label>
+            </fieldset>
+
+            <label class="reg-consent"><input type="checkbox" name="consent" data-label="Agreement to be contacted" required> I agree that Agrinova may store these details and contact me about supplying produce.</label>
+            <div class="reg-foot">
+              <p class="reg-hint">Submitting opens your email app with this registration ready to send to info@agrinova.ae.</p>
+              <button class="btn dark" type="submit">Submit supplier registration</button>
+            </div>
+            <p class="reg-err" role="alert" hidden></p>
+          </form>
+          <div class="reg-done" hidden>
+            <h3 tabindex="-1">Almost done: send the email to finish.</h3>
+            <p>Your email app should have opened with your registration. Press send to complete it. If it didn't open, use one of these options.</p>
+            <div class="reg-done-actions">
+              <a class="btn dark reg-mail" href="#">Open email again</a>
+              <button class="btn line reg-copy" type="button">Copy details</button>
+              <button class="btn line reg-again" type="button">Edit details</button>
+            </div>
+            <p class="reg-hint">You can paste the copied details into any email to <a href="mailto:info@agrinova.ae">info@agrinova.ae</a>.</p>
+            <textarea class="reg-copy-text" rows="8" readonly hidden aria-label="Your registration details"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= CUSTOMER ================= -->
+    <div class="reg-panel" id="panel-customer" role="tabpanel" aria-labelledby="tab-customer" hidden>
+      <div class="reg-grid">
+        <aside class="reg-aside">
+          <h2>Buy with us.</h2>
+          <p>We supply retail chains, wholesalers, distributors and food service buyers across the UAE and GCC. Register to open an account with our trading desk.</p>
+          <ol class="reg-steps">
+            <li><b>Register</b><span>Tell us about your business and what you buy.</span></li>
+            <li><b>Call with our trading desk</b><span>We talk through products, volumes and delivery.</span></li>
+            <li><b>Account set-up</b><span>We ask for your trade licence and agree terms.</span></li>
+            <li><b>First order</b><span>Weekly availability and pricing, delivered from Ras Al Khor.</span></li>
+          </ol>
+        </aside>
+
+        <div class="reg-card">
+          <form class="reg" data-kind="customer" novalidate>
+            <fieldset>
+              <legend>Your business</legend>
+              <div class="reg-row">
+                <label>Company name<input name="company" data-label="Company" required autocomplete="organization"></label>
+                <label>Type of business
+                  <select name="btype" data-label="Type of business" required>
+                    <option value="">Choose</option>
+                    <option>Retail chain or hypermarket</option><option>Supermarket or grocery</option><option>Wholesaler</option><option>Distributor</option><option>Hotel, restaurant or catering</option><option>Exporter or re-exporter</option><option>Other</option>
+                  </select>
+                </label>
+              </div>
+              <div class="reg-row">
+                <label>Country
+                  <select name="country" data-label="Country" required>
+                    <option value="">Choose a country</option>
+                    <option>United Arab Emirates</option><option>Saudi Arabia</option><option>Qatar</option><option>Kuwait</option><option>Bahrain</option><option>Oman</option><option>Other</option>
+                  </select>
+                </label>
+                <label>Emirate or city<input name="city" data-label="Emirate or city" placeholder="For example, Dubai or Riyadh"></label>
+              </div>
+              <div class="reg-row">
+                <label>Trade licence no. <small>(optional)</small><input name="licence" data-label="Trade licence number"></label>
+                <label>Number of stores or outlets <small>(optional)</small><input name="outlets" data-label="Stores or outlets" inputmode="numeric"></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>What you buy</legend>
+              <div class="reg-chips" data-required-group="products you're interested in">
+                <label><input type="checkbox" name="products" value="Citrus" data-name="products" data-label="Products of interest"><span>Citrus</span></label>
+                <label><input type="checkbox" name="products" value="Fruit"><span>Fruit</span></label>
+                <label><input type="checkbox" name="products" value="Tropical and exotic"><span>Tropical &amp; exotic</span></label>
+                <label><input type="checkbox" name="products" value="Berries and cherries"><span>Berries &amp; cherries</span></label>
+                <label><input type="checkbox" name="products" value="Melons"><span>Melons</span></label>
+                <label><input type="checkbox" name="products" value="Vegetables"><span>Vegetables</span></label>
+                <label><input type="checkbox" name="products" value="Roots and bulbs"><span>Roots &amp; bulbs</span></label>
+                <label><input type="checkbox" name="products" value="Cabbage and cauliflower"><span>Cabbage &amp; cauliflower</span></label>
+              </div>
+              <div class="reg-row">
+                <label>Typical weekly volume
+                  <select name="weekly" data-label="Typical weekly volume">
+                    <option value="">Choose</option><option>Under 1 tonne</option><option>1 to 5 tonnes</option><option>5 to 20 tonnes</option><option>20 to 50 tonnes</option><option>Over 50 tonnes</option>
+                  </select>
+                </label>
+                <label>How often do you order?
+                  <select name="freq" data-label="Order frequency">
+                    <option value="">Choose</option><option>Daily</option><option>Several times a week</option><option>Weekly</option><option>Seasonal programmes</option>
+                  </select>
+                </label>
+              </div>
+              <div class="reg-row">
+                <label>Delivery or collection
+                  <select name="delivery" data-label="Delivery or collection">
+                    <option value="">Choose</option><option>Delivered to our warehouse or stores</option><option>We collect from Ras Al Khor</option><option>Either</option>
+                  </select>
+                </label>
+                <label>Packing preference
+                  <select name="packing" data-label="Packing preference">
+                    <option value="">Choose</option><option>Bulk cartons</option><option>Retail-ready packs</option><option>Our own private label</option><option>Mixed</option>
+                  </select>
+                </label>
+              </div>
+              <label class="full">Products, specs or grades you need <small>(optional)</small><textarea name="specs" data-label="Products and specs" rows="3" placeholder="For example, Egyptian Valencia oranges, size 88 to 113, 15 kg cartons"></textarea></label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Contact person</legend>
+              <div class="reg-row">
+                <label>Full name<input name="name" data-label="Contact name" required autocomplete="name"></label>
+                <label>Role<input name="role" data-label="Role" autocomplete="organization-title" placeholder="For example, Category buyer"></label>
+              </div>
+              <div class="reg-row">
+                <label>Email<input name="email" type="email" data-label="Email" required autocomplete="email"></label>
+                <label>Phone or WhatsApp<input name="phone" type="tel" data-label="Phone or WhatsApp" required autocomplete="tel" placeholder="With country code"></label>
+              </div>
+              <label class="full">Anything else we should know? <small>(optional)</small><textarea name="notes" data-label="Notes" rows="3"></textarea></label>
+            </fieldset>
+
+            <label class="reg-consent"><input type="checkbox" name="consent" data-label="Agreement to be contacted" required> I agree that Agrinova may store these details and contact me about my account and orders.</label>
+            <div class="reg-foot">
+              <p class="reg-hint">Submitting opens your email app with this registration ready to send to info@agrinova.ae.</p>
+              <button class="btn dark" type="submit">Submit customer registration</button>
+            </div>
+            <p class="reg-err" role="alert" hidden></p>
+          </form>
+          <div class="reg-done" hidden>
+            <h3 tabindex="-1">Almost done: send the email to finish.</h3>
+            <p>Your email app should have opened with your registration. Press send to complete it. If it didn't open, use one of these options.</p>
+            <div class="reg-done-actions">
+              <a class="btn dark reg-mail" href="#">Open email again</a>
+              <button class="btn line reg-copy" type="button">Copy details</button>
+              <button class="btn line reg-again" type="button">Edit details</button>
+            </div>
+            <p class="reg-hint">You can paste the copied details into any email to <a href="mailto:info@agrinova.ae">info@agrinova.ae</a>.</p>
+            <textarea class="reg-copy-text" rows="8" readonly hidden aria-label="Your registration details"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="row">
+      <div>
+        <a class="mark" href="index.html"><img src="logo-light.png" alt="Agrinova" width="158" height="32"></a>
+        <p style="margin-top:14px">Agrinova Global General Trading L.L.C.</p>
+        <p>Fresh Market, Ras Al Khor, Dubai, UAE</p>
+      </div>
+      <div>
+        <p><a href="produce.html">Produce</a></p>
+        <p><a href="sustainability.html">Sustainability</a></p>
+        <p><a href="register.html#supplier">Register as a supplier</a></p>
+        <p><a href="register.html#customer">Register as a customer</a></p>
+        <p><a href="index.html#partner">Contact us</a></p>
+      </div>
+      <div>
+        <p><a href="mailto:info@agrinova.ae">info@agrinova.ae</a></p>
+        <p>Trade licence 1124081</p>
+      </div>
+    </div>
+    <p class="fine">© <span id="yr"></span> Agrinova Global General Trading L.L.C. Video from Pexels; product photographs from Unsplash, with some from the Fruits-360 dataset by Horea Mureșan and contributors (CC BY-SA 4.0), adapted as cutouts for this site.</p>
+  </div>
+</footer>
+<script src="site.js?v=202610301705"></script>
+<script src="register.js?v=202610301705"></script>
+</body>
+</html>
