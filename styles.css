@@ -389,3 +389,4 @@ form.reg [aria-invalid="true"]{border-color:var(--pom);outline:1.5px solid var(-
 form.reg{grid-template-columns:1fr;padding:0;background:none;border-radius:0}
 form.reg[hidden],.reg-done[hidden],.reg-panel[hidden],.reg-err[hidden],.reg-copy-text[hidden]{display:none!important}
 .nav a.cta[aria-current="page"]{background:var(--saffron);color:var(--ink)}
+.photo-note{margin-top:20px;font-size:.78rem;color:var(--muted);opacity:.8}
