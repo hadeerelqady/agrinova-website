@@ -69,11 +69,11 @@
       var subject='Website enquiry: '+(company||name);
       var bot=f.botcheck&&f.botcheck.checked;
       btn.disabled=true;var label=btn.textContent;btn.textContent='Sending…';
-      agriSend(subject,{'Name':name,'Company':company,'Email':email,'They are a':f.type.value,'Message':msg},email,name,bot).then(function(ok){
+      var payload={'Name':name,'Company':company,'Email':email,'They are a':f.type.value,'Message':msg};var go=function(){return agriSend(subject,payload,email,name,bot)};
+      go().then(function(ok){return ok||new Promise(function(r){setTimeout(r,1500)}).then(go)}).then(function(ok){
         btn.disabled=false;btn.textContent=label;
         if(ok){f.innerHTML='<div class="full form-thanks" tabindex="-1"><h3>Thank you, '+name.replace(/[<>&"]/g,'')+'.</h3><p>Your enquiry has reached our trading desk. We\'ll reply to '+email.replace(/[<>&"]/g,'')+' shortly.</p></div>';f.querySelector('.form-thanks').focus();return}
-        var body='Name: '+name+'\nCompany: '+company+'\nEmail: '+email+'\nType: '+f.type.value+'\n\n'+msg;
-        location.href='mailto:info@agrinova.ae?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+        err.hidden=false;err.textContent='We could not send your enquiry just now. Please check your internet connection and try again, or email info@agrinova.ae.';
       });
     });
   }

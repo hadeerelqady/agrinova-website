@@ -39,31 +39,19 @@
       });
       var company=val(f,'company')||val(f,'name');
       var subject=(kind==='supplier'?'Supplier registration: ':'Customer registration: ')+company;
-      var body=subject+'\n\n'+lines.join('\n')+'\n\nSent from the registration page on the Agrinova website.';
-      var mail='mailto:info@agrinova.ae?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
       var btn=f.querySelector('button[type=submit]'),label=btn.textContent;btn.disabled=true;btn.textContent='Sending…';
       var bot=f.elements.botcheck&&f.elements.botcheck.checked;
-      agriSend(subject,fields,val(f,'email'),val(f,'name'),bot).then(function(ok){
+      var go=function(){return agriSend(subject,fields,val(f,'email'),val(f,'name'),bot)};
+      go().then(function(ok){return ok||new Promise(function(r){setTimeout(r,1500)}).then(go)}).then(function(ok){
         btn.disabled=false;btn.textContent=label;
+        if(!ok){err.hidden=false;err.textContent='We could not send your registration just now. Please check your internet connection and press the button again. If it keeps happening, email us at info@agrinova.ae.';err.focus&&err.focus();return}
         f.hidden=true; done.hidden=false;
-        done.querySelector('.reg-sent').hidden=!ok;
-        done.querySelector('.reg-fallback').hidden=ok;
-        done.querySelector('.reg-copy-text').value=body;
-        done.querySelector('.reg-mail').href=mail;
-        var h=done.querySelector(ok?'.reg-sent h3':'.reg-fallback h3');h.focus();
+        done.querySelector('.reg-sent').hidden=false;done.querySelector('.reg-sent h3').focus();
         window.scrollTo({top:done.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'});
-        if(!ok) location.href=mail;
       });
     });
   });
 
-  [].forEach.call(document.querySelectorAll('.reg-copy'),function(b){
-    b.addEventListener('click',function(){
-      var t=b.closest('.reg-done').querySelector('.reg-copy-text');
-      var ok=function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy details'},2000)};
-      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(t.value).then(ok,function(){t.hidden=false;t.select()})}else{t.hidden=false;t.select()}
-    });
-  });
   [].forEach.call(document.querySelectorAll('.reg-again'),function(b){
     b.addEventListener('click',function(){var d=b.closest('.reg-done');d.hidden=true;d.parentNode.querySelector('form.reg').hidden=false});
   });
