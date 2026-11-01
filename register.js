@@ -31,20 +31,29 @@
       [].forEach.call(groups,function(g){var any=g.querySelector('input:checked');g.classList.toggle('invalid',!any);if(!any)missing.push(g.dataset.requiredGroup)});
       if(missing.length){err.hidden=false;err.textContent='Please complete: '+missing.join(', ')+'.';var first=f.querySelector('[aria-invalid="true"], .invalid input');if(first)first.focus();return}
       err.hidden=true;
-      var lines=[],seen={};
+      var lines=[],fields={},seen={};
       [].forEach.call(f.querySelectorAll('[data-label]'),function(el){
         var n=el.name||el.dataset.name;if(seen[n])return;seen[n]=1;
         var v=el.dataset.name?val(f,n):val(f,el.name);
-        if(v) lines.push((el.dataset.label)+': '+v);
+        if(v){lines.push((el.dataset.label)+': '+v);fields[el.dataset.label]=v}
       });
       var company=val(f,'company')||val(f,'name');
       var subject=(kind==='supplier'?'Supplier registration: ':'Customer registration: ')+company;
       var body=subject+'\n\n'+lines.join('\n')+'\n\nSent from the registration page on the Agrinova website.';
-      f.hidden=true; done.hidden=false;
-      done.querySelector('.reg-copy-text').value=body;
-      done.querySelector('.reg-mail').href='mailto:info@agrinova.ae?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
-      done.querySelector('h3').focus();
-      location.href='mailto:info@agrinova.ae?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      var mail='mailto:info@agrinova.ae?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      var btn=f.querySelector('button[type=submit]'),label=btn.textContent;btn.disabled=true;btn.textContent='Sending…';
+      var bot=f.elements.botcheck&&f.elements.botcheck.checked;
+      agriSend(subject,fields,val(f,'email'),val(f,'name'),bot).then(function(ok){
+        btn.disabled=false;btn.textContent=label;
+        f.hidden=true; done.hidden=false;
+        done.querySelector('.reg-sent').hidden=!ok;
+        done.querySelector('.reg-fallback').hidden=ok;
+        done.querySelector('.reg-copy-text').value=body;
+        done.querySelector('.reg-mail').href=mail;
+        var h=done.querySelector(ok?'.reg-sent h3':'.reg-fallback h3');h.focus();
+        window.scrollTo({top:done.getBoundingClientRect().top+window.scrollY-120,behavior:'smooth'});
+        if(!ok) location.href=mail;
+      });
     });
   });
 

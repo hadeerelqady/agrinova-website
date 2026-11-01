@@ -390,3 +390,11 @@ form.reg{grid-template-columns:1fr;padding:0;background:none;border-radius:0}
 form.reg[hidden],.reg-done[hidden],.reg-panel[hidden],.reg-err[hidden],.reg-copy-text[hidden]{display:none!important}
 .nav a.cta[aria-current="page"]{background:var(--saffron);color:var(--ink)}
 .photo-note{margin-top:20px;font-size:.78rem;color:var(--muted);opacity:.8}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+.reg-sent[hidden],.reg-fallback[hidden]{display:none!important}
+.reg-sent,.reg-fallback{display:grid;gap:16px}
+.reg-sent h3,.reg-fallback h3{font-size:1.8rem;font-weight:380}
+.reg-sent h3:focus,.reg-fallback h3:focus,.form-thanks:focus{outline:none}
+.form-thanks h3{font-family:var(--serif);font-size:1.8rem;font-weight:380}
+.form-thanks p{color:var(--muted);margin-top:10px}
+button[disabled]{opacity:.6;cursor:wait}
